@@ -1,0 +1,28 @@
+Mutable objects:
+-dynamic internal state
+-no simple, fixed hash value -> can't be used as a key to dict or a member of a set[don't have uniquness]
+-is not a fixed sign-post on the side of the road, it's a flowing river, always changing
+
+
+Immutable objects:
+-don't have dynamic internal
+-can be summarized with a simple, fixed hash value -> perfect for dictionary keys or set memembers
+
+list --> mutable
+set --> mutable
+
+string --> immutable
+tuple --> immutable
+dictionary --> mutable
+
+Shallow copy vs. Deep copy
+
+Shallow copy
+In a shallow copy, both collections(orignal and copied) share the underlying items.
+When two collection share a mutable item(list, set or dict) then the mutable item can be changed
+through more than one reference.
+shallow=list_of_list[:]
+
+Deep Copy
+import copy
+deep=copy.deepcopy(list_of_list)
