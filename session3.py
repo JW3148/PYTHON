@@ -119,3 +119,38 @@ Picking and Choosing
 """
 list_cube
 list_cube[::2]
+"""
+Functions
+"""
+
+def my_first_function(name):
+    print("Hello,{0}".format(name))
+    
+my_first_function("James")
+
+"""
+Lambda Objects
+"""
+weird_math_lamba = lambda x, y: x*y+x/y-x**2
+weird_math_lamba(1,3)
+
+data=[('VA',23),('FL',12),('NY',56)]
+data
+data.sort
+data
+data.sort(key=lambda item: item[1]) 
+data
+
+
+def f(s):
+    print(s)
+    s = "Only in spring, but London is great as well!"
+    return s
+    
+s = "I am looking for a course in Paris!" 
+f(s)
+print(s)
+s=f(s)
+s
+print(a)
+
