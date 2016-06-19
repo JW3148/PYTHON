@@ -26,3 +26,15 @@ shallow=list_of_list[:]
 Deep Copy
 import copy
 deep=copy.deepcopy(list_of_list)
+
+
+Functions
+-functions pass in argument by doing assignment
+-for example x=10, f(x): x=x+10
+-in this case 10 is a immutable object, x=x+10 means x(in function name space) is pointed to 20(a new object)
+-when you query x outside the function(global name space), x is still pointing to 10, therefore you will get 10
+-if the arguement passed in is  mutable, then this might be different
+-for example x=[1,2,3], f(x):x.append(4), the argument passed in is a list, which is mutable
+-in side the function, the object [1,2,3] is modified to [1,2,3,4], this can happen because it is mutable
+-when you call x outside the function you will have [1,2,3,4] 
+-to sum to, the underlying object has no scope, variable has scope
