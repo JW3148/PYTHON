@@ -12,6 +12,7 @@ import numpy as np
 
 npa=np.arange(10)
 
+
 npa.mean()
 npa.max()
 npa.min()
